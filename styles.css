@@ -78,7 +78,7 @@ a:active {
 */
 
 .crt {
-    animation: textShadow 3.6s infinite;
+    /*animation: textShadow 3.6s infinite;*/
   }
 
 .crt::before {
