@@ -13,7 +13,7 @@ function runCmdLine() {
 
     switch (userCMD[0]) {
         case "help":
-            output.innerHTML = "Here's a list of commands:<br>";
+            output.innerHTML = "Here's a list of commands:<br>cd - navigate to different pages<br>contact - get contact info<br>help - pull up list of available commands";
             break;
 
         case "contact":
