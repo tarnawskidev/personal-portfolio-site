@@ -7,7 +7,6 @@
     src: url(fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf);
 }
 
-
 body {
     background-color: #001900;
     color: #45f787;
@@ -17,6 +16,7 @@ body {
 #wrapper {
     width: 90vw;
     height: 90vh;
+    min-height: max-content;
     border: 5px solid #45f787;
     margin: auto;
 }
@@ -56,30 +56,38 @@ input[type="text"], input[type="text"]:focus {
     background: none;
 }
 
-a:link { 
+a:link, a:visited, a:hover, a:active { 
     text-decoration: inherit;
     color: inherit; 
 } 
-a:visited { 
-    text-decoration: inherit; 
-    color: inherit;
-} 
-a:hover { 
-    text-decoration: inherit; 
-    color: inherit;
-} 
-a:active { 
-    text-decoration: inherit; 
-    color: inherit;
+
+/* Table styling */
+
+table {
+    margin: auto;
+    width: 100%;
+}
+
+th {
+    background-color: #45f787;
+    color:#001900;
+    border: 5px solid #45f787;
+}
+
+td {
+    border: 5px solid #45f787;
+    padding: 20px;
 }
 
 /*
 * CRT effect from Alec Lownes: https://aleclownes.com/2017/02/01/crt-display.html 
 */
 
+/*
 .crt {
-    /*animation: textShadow 3.6s infinite;*/
+    animation: textShadow 3.6s infinite;
   }
+*/
 
 .crt::before {
     content: "";

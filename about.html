@@ -16,9 +16,33 @@
       </nav>
       <div id="content">
         <h1>Welcome to the About Page.</h1>
-        <p>Here's an image.</p>
-        <img src="icon placeholder.png" height="100px" width="100px">
-        <p>I'll put more here sometime soon I promise.</p>
+        <table>
+          <tr>
+            <th>Who am I?</th>
+            <th>What can I do?</th>
+          </tr>
+          <tr>
+            <td rowspan="3"><p>Here's an image.</p>
+              <img src="icon placeholder.png" height="100px" width="100px">
+              <p>I'll put more here sometime soon I promise.</p>
+            </td>
+            <td>I can do stuff like: 
+              <ul>
+                <li>javascript</li> 
+                <li>html and css</li>
+                <li>java</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Where did I come from?</th>
+          </tr>
+          <tr>
+            <td>I got a web development AAS from College of DuPage.</td>
+          </tr>
+        </table>
+
+        <!--command line here-->
         <p id="cmdoutput">Type "help" for a list of commands.</p>
         <p><form id="sitecmd" onsubmit="return false;">><input type="text" id="cmdline"></form></p>
       </div>
