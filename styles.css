@@ -2,14 +2,22 @@
 * MS-DOS Font created by Zeh Fernando: https://www.dafont.com/perfect-dos-vga-437.font
 */
 
+/*
+* Colors:
+* #45f787 (green)
+* 001900 (greenish black)
+* #FFBF00 (amber)
+* #261e01 (yellowish black)
+*/
+
 @font-face {
     font-family: "PerfectDOS";
     src: url(fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf);
 }
 
 body {
-    background-color: #001900;
-    color: #45f787;
+    background-color: #261e01;
+    color: #ffBF00;
     font-family: "PerfectDOS", monospace;
 }
 
@@ -17,7 +25,7 @@ body {
     width: 90vw;
     height: 90vh;
     min-height: max-content;
-    border: 5px solid #45f787;
+    border: 5px solid #ffBF00;
     margin: auto;
 }
 
@@ -27,9 +35,9 @@ body {
 
 nav {
     display: flex;
-    background-color: #45f787;
-    color: #001900;
-    border-bottom: 5px solid #45f787;;
+    background-color: #ffBF00;
+    color: #261e01;
+    border-bottom: 5px solid #ffBF00;;
 }
 
 p {
@@ -42,8 +50,8 @@ p {
 }
 
 .navelement:hover {
-    background-color: #001900;
-    color: #45f787;
+    background-color: #261e01;
+    color: #ffBF00;
 }
 
 input[type="text"], input[type="text"]:focus {
@@ -63,19 +71,23 @@ a:link, a:visited, a:hover, a:active {
 
 /* Table styling */
 
+
+
 table {
     margin: auto;
     width: 100%;
+    border: 5px solid #ffBF00;
+    /*border-spacing: 0;*/
 }
 
 th {
-    background-color: #45f787;
-    color:#001900;
-    border: 5px solid #45f787;
+    background-color: #ffBF00;
+    color:#261e01;
+    border: 5px solid #ffBF00;
 }
 
 td {
-    border: 5px solid #45f787;
+    border: 5px solid #ffBF00;
     padding: 20px;
 }
 
@@ -246,5 +258,11 @@ td {
     }
     100% {
       text-shadow: 1.6208764473832513px 0 1px rgba(0,30,255,0.5), -1.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+    }
+  }
+
+  @media only screen and (max-device-width: 380px) {
+    #desktoptable {
+        display: initial;
     }
   }
