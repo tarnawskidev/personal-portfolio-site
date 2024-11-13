@@ -263,6 +263,6 @@ td {
 
   @media only screen and (max-device-width: 380px) {
     #desktoptable {
-        display: initial;
+        display: none;
     }
   }
