@@ -24,7 +24,7 @@ function runCmdLine() {
             } else if (userCMD[1] == "twitter" || userCMD[1] == "x") {
                 output.innerHTML = "I'm not currently on twitter!";
             } else {
-                output.innerHTML = "Error: " + userCMD[1] + " is not a valid argument for \"contact\".";
+                output.innerHTML = "Error: not a valid argument for \"contact\".";
             }
             break;
         //navigate between site pages
@@ -40,12 +40,12 @@ function runCmdLine() {
             } else if (userCMD[1] == undefined) {
                 output.innerHTML = "Error: Destination for \"cd\" not specified";
             } else {
-                output.innerHTML = "Error: " + userCMD[1] + " is not a valid argument for \"cd\".";
+                output.innerHTML = "Error: not a valid argument for \"cd\".";
             }
             break;
 
         default:
-            output.innerHTML = "Error: " + userCMD[0] + " is not a recognized command.<br>Type \"help\" for a list of commands.";
+            output.innerHTML = "Error: not a recognized command.<br>Type \"help\" for a list of commands.";
 
     }
 }
