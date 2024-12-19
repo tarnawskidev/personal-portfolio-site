@@ -18,7 +18,7 @@ function runCmdLine() {
         //retrieve contact info
         case "contact":
             if (userCMD[1] == undefined) {
-                output.innerHTML = "Here's some of my contact info:<br>";
+                output.innerHTML = "Here's some of my contact info:<br>Email: dtarnawskilts@gmail.com";
             } else if (userCMD[1] == "email") {
                 output.innerHTML = "You can email me at <a href=\"mailto:dtarnawskilts@gmail.com\">dtarnawskilts@gmail.com<a>.";
             } else if (userCMD[1] == "twitter" || userCMD[1] == "x") {
